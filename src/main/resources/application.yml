@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: liquibase-prototype
+  main:
+    banner-mode: off
+
+  datasource:
+    url: jdbc:db2://localhost:50000/testdb
+    username: db2inst1
+    password: password
+    driver-class-name: com.ibm.db2.jcc.DB2Driver
+  jpa:
+    database-platform: org.hibernate.dialect.DB2Dialect
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
