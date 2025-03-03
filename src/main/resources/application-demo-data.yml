@@ -1,0 +1,9 @@
+---
+# Spring-Boot Profile "demo-data".
+# Enables the liquibase migrations to include demo-data for the base product.
+
+spring:
+  liquibase:
+    label-filter:
+      - base-product
+      - demo-data-base-product

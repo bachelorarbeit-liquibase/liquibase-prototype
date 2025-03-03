@@ -1,0 +1,15 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.24.xsd">
+
+    <changeSet id="1740917101362-1" author="rs">
+        <sqlFile path="sql/warehouses.sql" relativeToChangelogFile="true"/>
+
+        <rollback>
+            DELETE FROM Warehouse
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

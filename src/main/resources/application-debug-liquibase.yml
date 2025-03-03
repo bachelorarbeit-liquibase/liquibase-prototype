@@ -1,0 +1,11 @@
+---
+# Spring-Boot Profile "debug-liquibase".
+# Configures the log levels to debug liquibase integration
+
+logging:
+  level:
+    liquibase.: DEBUG
+    org:
+      springframework:
+        boot:
+          liquibase.*: DEBUG

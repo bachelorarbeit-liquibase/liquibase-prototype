@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.24.xsd">
+
+    <include file="migrations/2024-12-14_15-00_create_customer_table.xml"
+             relativeToChangelogFile="true"
+             labels="base-product"/>
+    <include file="migrations/2024-12-14_15-10_create_machines_table.xml"
+             relativeToChangelogFile="true"
+             labels="base-product"/>
+    <include file="migrations/2024-12-14_15-20_create_order_table.xml"
+             relativeToChangelogFile="true"
+             labels="base-product"/>
+
+    <include file="migrations/2024-12-15_10-00_create_warehouse_table.xml"
+             relativeToChangelogFile="true"
+             labels="inventory"/>
+    <include file="migrations/2024-12-15_10-20_create_inventory_item_table.xml"
+             relativeToChangelogFile="true"
+             labels="inventory"/>
+
+</databaseChangeLog>

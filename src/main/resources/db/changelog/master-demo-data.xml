@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.24.xsd">
+
+    <include file="demo-data/2024-12-14_15-00_customer_demo_data.xml"
+             relativeToChangelogFile="true"
+             labels="demo-data-base-product"/>
+
+    <include file="demo-data/2024-12-15_11-00_warehouse_demo_data.xml"
+             relativeToChangelogFile="true"
+             labels="demo-data-inventory"/>
+
+</databaseChangeLog>

@@ -1,0 +1,15 @@
+---
+# Spring-Boot Profile "all-extensions-demo-data".
+# Enables all available extensions and configures corresponding liquibase migrations including demo-data.
+
+spring:
+  liquibase:
+    label-filter:
+      - base-product
+      - inventory
+      - demo-data-base-product
+      - demo-data-inventory
+
+myerpapp:
+  inventory:
+    enabled: true

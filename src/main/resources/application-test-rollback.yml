@@ -1,0 +1,7 @@
+---
+# Spring-Boot Profile "test-rollback".
+# Intended to be used to test liquibase rollbacks.
+
+spring:
+  liquibase:
+    test-rollback-on-update: true

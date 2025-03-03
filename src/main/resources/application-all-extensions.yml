@@ -1,0 +1,13 @@
+---
+# Spring-Boot Profile "all-extensions".
+# Enables all available extensions and configures corresponding liquibase migrations.
+
+spring:
+  liquibase:
+    label-filter:
+      - base-product
+      - inventory
+
+myerpapp:
+  inventory:
+    enabled: true
